@@ -10,14 +10,14 @@ Open your terminal with python3 installed and call the command
 python pyparser.py [filenames]
 ```
 
-where filenames is a list of either absolute paths or relative paths to the current directory
+where filenames is a list of either absolute paths or relative paths to the current directory.
 
 ## Dependencies
-None! This code works using the ast module in python and requires no other modules to be installed
+None! This code works using the ast module in python and requires no other modules to be installed.
 
-## testing
+## Test
 Use the command
 ```
 python -m unittest testparse
 ```
-to run tests to confirm files and directories are correctly accessed
+to run tests to confirm files and directories are correctly accessed.
