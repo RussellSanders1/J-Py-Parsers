@@ -7,10 +7,10 @@ The purpose of this module is to walk given directories to find python source co
 Open your terminal with python3 installed and call the command
 
 ```bash
-python pyparser.py filenames
+python pyparser.py paths
 ```
 
-where filenames is a list of either absolute paths or relative paths to the current directory.
+where paths is a list of either absolute paths or relative paths to the current directory.
 
 ## Dependencies
 None! This code works using the ast module in python and requires no other modules to be installed.
