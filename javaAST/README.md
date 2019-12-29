@@ -20,8 +20,12 @@ to generate a jar of the program, then using
 ```
 mvn exec:java -Dexec.args="arguments"
 ```
-to run the program, where "arguments" is
-the list of directories you would like to parse
+to run the program, where arguments is
+the list of directories you would like to parse.
+Make sure to use proper escaping for paths to ensure
+they are correct (e.g. User Name/Desktop should be formatted
+as -Dexec.args="'User Name/Desktop'" paying special attention to
+the double and single quotes)
 
 ## Test
 Basic unit tests demonstrate parsing of a single file,

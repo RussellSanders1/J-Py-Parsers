@@ -7,7 +7,7 @@ The purpose of this module is to walk given directories to find python source co
 Open your terminal with python3 installed and call the command
 
 ```bash
-python pyparser.py [filenames]
+python pyparser.py filenames
 ```
 
 where filenames is a list of either absolute paths or relative paths to the current directory.

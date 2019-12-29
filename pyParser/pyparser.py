@@ -1,6 +1,6 @@
 import ast
 from os import walk
-from os.path import isfile, join
+from os.path import isfile, join, exists
 import tokenize
 import sys
 
@@ -71,12 +71,15 @@ def parsefile(filename):
 def parseDir(directory):
     """Recursively parse a directory by calling parseDir on subdirectories
     and parsefile on files that end with .py"""
-    for path, dirs, files in walk(directory):
+    if exists(directory):
+        for path, dirs, files in walk(directory):
             for file in files:
                 if file.endswith('.py'):
                     parsefile(join(path,file))
             for dir in dirs:
                 parseDir(join(path,dir))
+    else:
+        print(directory +' does not exist')
 
 #parse directory in argv if it exists
 def main():
